@@ -59,11 +59,6 @@ for product in img_list:
 	fin_pro = product
 	path2 = fin_fold+'/'+ str(dict_data[product])+".png"
 
-	# ------------------Step2 - Resizing by fixing aspect ratio ---------
-	r = 350.0 / img.shape[1]
-	dim = (350, int(img.shape[0] * r))
-	img = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
-
 
 	# ---Finding extreme points (To find bounding rectangel) ----
 	c=0
@@ -137,9 +132,10 @@ for product in img_list:
 	fgdModel = np.zeros((1,65),np.float64)
 
 	img = cv2.imread(folder+'/'+product)
-	r = 350.0 / img.shape[1]
-	dim = (350, int(img.shape[0] * r))
-	img = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
+	
+	#r = 350.0 / img.shape[1]
+	#dim = (350, int(img.shape[0] * r))
+	#img = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
 
 	# ---------------Step 3 - Path Tracing -------------------
 

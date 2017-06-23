@@ -1,14 +1,14 @@
+Internship Project @ Ugam Solutions - Bangalore.
+
 DOCUMENTATION AND GUIDE TO RUN SCRIPT
 
 ORS IMAGE PROJECT:
 
 Three Tasks:
 1. Re-Naming
-2. Re-Sizing
 3. Path tracing
 
 1. Re-naming is done through excel file or .ods file.
-2. Re-sizing is done with width = 350 by fixing aspect ratio.
 3. Path tracing :
 
    Algorithm used to extract foreground is GrabCut.
@@ -29,6 +29,8 @@ Three Tasks:
 
 Steps to run the program (On Ubuntu System):
 
+Explained detailed in Guide.pdf
+
 1. Open terminal
 2. Navigate to the directory where you downloaded GrabCut_F.
 3. You need to give four inputs
@@ -40,7 +42,6 @@ Steps to run the program (On Ubuntu System):
 5. If yes :- exit
 6. Else run again with different e1,e2,e3,e4 values.
 
-Note : Sample folders and excel file is already provided for your test run.
 
 
 
